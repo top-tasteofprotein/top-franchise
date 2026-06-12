@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TOP Franchise · Own a TOP Cloud Kitchen</title>
+<meta name="description" content="Own a TOP cloud kitchen. Fully managed by us. From ₹12L. Built for India's fastest growing food category.">
+<link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============ RESET & BASE ============ */
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family:'Plus Jakarta Sans',sans-serif;
+    background:#021a0e;
+    color:#fff;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  .wrap { max-width:480px; margin:0 auto; background:#021a0e; }
+  .lime { color:#94DA00; }
+
+  /* shared section paddings */
+  .sec { padding:40px 22px; }
+  .eyebrow { display:inline-block; font-size:10px; letter-spacing:2.5px; font-weight:700; text-transform:uppercase; margin-bottom:18px; }
+  .eyebrow.solid { color:#03331C; background:#94DA00; padding:5px 11px; border-radius:3px; }
+  .eyebrow.outline { color:#94DA00; border:1px solid rgba(148,218,0,0.4); padding:5px 11px; border-radius:3px; }
+  h2.head { font-family:'Bebas Neue',sans-serif; font-size:36px; line-height:0.98; letter-spacing:1px; color:#fff; margin-bottom:10px; }
+  .intro { font-size:12.5px; line-height:1.55; color:rgba(255,255,255,0.5); }
+
+  /* ============ SECTION 1 — HERO ============ */
+  #hero { background:#03331C; }
+  .h-headline { font-family:'Bebas Neue',sans-serif; font-size:37px; line-height:0.98; letter-spacing:1px; color:#fff; margin-bottom:13px; }
+  .h-sub { font-size:16px; font-weight:700; line-height:1.4; color:#94DA00; margin-bottom:11px; }
+  .h-explainer { font-size:12.5px; line-height:1.55; color:rgba(255,255,255,0.5); margin-bottom:26px; }
+  .h-cards { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
+  .h-card { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:16px; display:flex; flex-direction:column; }
+  .h-card .icw { width:42px; height:42px; border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:11px; }
+  .h-card .icw i { font-size:23px; }
+  .ic-green .icw { background:rgba(148,218,0,0.15); } .ic-green .icw i { color:#94DA00; }
+  .ic-blue .icw { background:rgba(55,138,221,0.15); } .ic-blue .icw i { color:#5BA8F5; }
+  .ic-amber .icw { background:rgba(253,212,0,0.15); } .ic-amber .icw i { color:#FDD400; }
+  .ic-pink .icw { background:rgba(212,83,126,0.18); } .ic-pink .icw i { color:#F082A8; }
+  .h-card .pre { font-size:11px; font-weight:600; color:rgba(255,255,255,0.45); height:15px; line-height:15px; }
+  .h-card .num { font-family:'Bebas Neue',sans-serif; font-size:34px; line-height:1; color:#fff; letter-spacing:0.5px; margin-top:1px; }
+  .h-card .num small { font-size:17px; }
+  .h-card .lbl { font-size:11px; line-height:1.4; color:rgba(255,255,255,0.55); margin-top:8px; font-weight:500; }
+  .h-protect { display:flex; gap:12px; align-items:center; background:rgba(148,218,0,0.1); border:1px solid rgba(148,218,0,0.25); border-radius:14px; padding:15px 16px; margin:16px 0 22px; }
+  .h-protect .pw { width:40px; height:40px; border-radius:11px; background:rgba(148,218,0,0.2); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .h-protect .pw i { color:#94DA00; font-size:21px; }
+  .h-protect .pt { font-size:11.5px; line-height:1.5; color:rgba(255,255,255,0.85); }
+  .h-protect .pt b { color:#94DA00; font-weight:700; }
+
+  /* shared CTA */
+  .cta-primary { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; background:#94DA00; color:#03331C; font-family:'Plus Jakarta Sans',sans-serif; font-size:15px; font-weight:700; border:none; border-radius:13px; padding:17px; cursor:pointer; letter-spacing:0.3px; text-decoration:none; transition:transform 0.1s; }
+  .cta-primary:active { transform:scale(0.98); }
+  .trust-line { display:flex; align-items:center; justify-content:center; gap:6px; text-align:center; font-size:10.5px; color:rgba(255,255,255,0.4); margin-top:13px; letter-spacing:0.3px; }
+
+  /* ============ SECTION 2 — WHY ============ */
+  #why { background:#042313; }
+  .why-list { display:flex; flex-direction:column; gap:12px; margin-top:26px; }
+  .why-card { display:flex; gap:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:15px; padding:17px 16px; align-items:flex-start; }
+  .why-card .icw { width:46px; height:46px; border-radius:13px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .why-card .icw i { font-size:25px; }
+  .why-card .body { flex:1; padding-top:1px; }
+  .why-card .ttl { font-size:14.5px; font-weight:700; color:#fff; margin-bottom:5px; }
+  .why-card .desc { font-size:12px; line-height:1.5; color:rgba(255,255,255,0.6); }
+  .why-card .desc b { color:#94DA00; font-weight:700; }
+
+  /* ============ SECTION 3 — FORM ============ */
+  #apply { background:#03331C; }
+  .f-field { margin-bottom:15px; }
+  .f-label { font-size:12px; font-weight:600; color:rgba(255,255,255,0.7); margin-bottom:7px; display:block; }
+  .f-label .req { color:#94DA00; }
+  .f-input, .f-select { width:100%; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:11px; padding:14px 15px; font-family:'Plus Jakarta Sans',sans-serif; font-size:14px; color:#fff; outline:none; transition:border 0.15s; -webkit-appearance:none; appearance:none; }
+  .f-input::placeholder { color:rgba(255,255,255,0.3); }
+  .f-input:focus, .f-select:focus { border-color:#94DA00; }
+  .f-select { background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394DA00' stroke-width='2.5'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"); background-repeat:no-repeat; background-position:right 15px center; background-size:18px; cursor:pointer; }
+  .f-select option { background:#03331C; color:#fff; }
+  .f-select.placeholder { color:rgba(255,255,255,0.3); }
+  .f-phone { display:flex; gap:8px; }
+  .f-cc { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:11px; padding:14px 12px; font-size:14px; color:#fff; flex-shrink:0; display:flex; align-items:center; gap:5px; white-space:nowrap; }
+  .f-err { font-size:11px; color:#FF8A8A; margin-top:5px; display:none; }
+
+  /* success screen */
+  .f-success { display:none; text-align:center; }
+  .f-success .sic { width:70px; height:70px; border-radius:50%; background:rgba(148,218,0,0.15); display:flex; align-items:center; justify-content:center; margin:8px auto 20px; animation:pop 0.4s ease; }
+  @keyframes pop { 0%{transform:scale(0);} 70%{transform:scale(1.1);} 100%{transform:scale(1);} }
+  .f-success .sic i { font-size:38px; color:#94DA00; }
+  .f-success h3 { font-family:'Bebas Neue',sans-serif; font-size:32px; color:#fff; letter-spacing:1px; margin-bottom:11px; }
+  .f-success .msg { font-size:13px; color:rgba(255,255,255,0.6); line-height:1.6; margin-bottom:26px; padding:0 6px; }
+  .f-success .msg b { color:#94DA00; font-weight:600; }
+  .f-divider { display:flex; align-items:center; gap:12px; margin-bottom:22px; }
+  .f-divider .ln { flex:1; height:1px; background:rgba(255,255,255,0.12); }
+  .f-divider .tx { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.4); font-weight:700; }
+  .f-broch { background:linear-gradient(135deg, rgba(148,218,0,0.12), rgba(148,218,0,0.03)); border:1px solid rgba(148,218,0,0.3); border-radius:16px; padding:20px 18px; text-align:left; }
+  .f-broch .bt { font-size:15px; font-weight:700; color:#fff; margin-bottom:7px; display:flex; align-items:center; gap:8px; }
+  .f-broch .bt i { color:#94DA00; font-size:20px; }
+  .f-broch .bd { font-size:11.5px; line-height:1.55; color:rgba(255,255,255,0.65); margin-bottom:16px; }
+  .f-broch .bd b { color:rgba(255,255,255,0.9); font-weight:600; }
+
+  /* ============ SECTION 4 — PROOF ============ */
+  #proof { background:#03331C; }
+  .p-stats { display:grid; grid-template-columns:1fr 1fr; gap:11px; margin:24px 0 13px; }
+  .p-stat { background:rgba(148,218,0,0.06); border:1px solid rgba(148,218,0,0.22); border-radius:14px; padding:18px 14px; text-align:center; }
+  .p-stat .n { font-family:'Bebas Neue',sans-serif; font-size:36px; line-height:0.95; color:#94DA00; letter-spacing:0.5px; }
+  .p-stat .n i { font-size:24px; }
+  .p-stat .l { font-size:11px; line-height:1.35; color:rgba(255,255,255,0.7); margin-top:7px; font-weight:500; }
+  .p-cohort { display:flex; gap:11px; align-items:center; background:rgba(91,168,245,0.1); border:1px solid rgba(91,168,245,0.25); border-radius:13px; padding:14px 15px; margin-bottom:24px; }
+  .p-cohort .ri { width:40px; height:40px; border-radius:11px; background:rgba(91,168,245,0.18); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .p-cohort .ri i { color:#5BA8F5; font-size:21px; }
+  .p-cohort .rt { font-size:11.5px; line-height:1.5; color:rgba(255,255,255,0.8); }
+  .p-cohort .rt b { color:#94DA00; font-weight:700; }
+  .sectlbl { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.4); font-weight:700; margin-bottom:12px; }
+  .p-reviews { display:flex; flex-direction:column; gap:10px; }
+  .p-card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:15px; }
+  .p-card .top { display:flex; align-items:center; gap:10px; margin-bottom:9px; }
+  .p-card .av { width:34px; height:34px; border-radius:50%; background:linear-gradient(135deg,#94DA00,#5BA8F5); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; color:#03331C; flex-shrink:0; }
+  .p-card .nm { font-size:13px; font-weight:700; color:#fff; }
+  .p-card .or { font-size:10.5px; color:rgba(255,255,255,0.45); }
+  .p-card .stars { margin-left:auto; color:#FDD400; font-size:12px; letter-spacing:1px; }
+  .p-card .qt { font-size:12.5px; line-height:1.55; color:rgba(255,255,255,0.75); font-style:italic; }
+
+  /* ============ SECTION 5 — NEXT ============ */
+  #next { background:#042313; border-radius:0 0 0 0; }
+  .n-steps { position:relative; margin:28px 0 26px; }
+  .n-step { display:flex; gap:15px; position:relative; padding-bottom:22px; }
+  .n-step:last-child { padding-bottom:0; }
+  .n-step .line { position:absolute; left:19px; top:42px; bottom:-2px; width:2px; background:linear-gradient(to bottom, rgba(148,218,0,0.4), rgba(148,218,0,0.1)); }
+  .n-step:last-child .line { display:none; }
+  .n-step .circle { width:40px; height:40px; border-radius:50%; background:rgba(148,218,0,0.15); border:1px solid rgba(148,218,0,0.4); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-family:'Bebas Neue',sans-serif; font-size:20px; color:#94DA00; position:relative; z-index:1; }
+  .n-step .body { flex:1; padding-top:3px; }
+  .n-step .ttl { font-size:14.5px; font-weight:700; color:#fff; margin-bottom:4px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .n-step .tag { font-size:9.5px; font-weight:700; letter-spacing:0.5px; color:#94DA00; background:rgba(148,218,0,0.12); padding:3px 8px; border-radius:20px; }
+  .n-step .desc { font-size:12px; line-height:1.5; color:rgba(255,255,255,0.6); }
+
+  /* footer */
+  .foot { text-align:center; padding:26px 22px 34px; background:#021a0e; }
+  .foot .logo { font-family:'Bebas Neue',sans-serif; font-size:26px; letter-spacing:2px; color:#94DA00; margin-bottom:6px; }
+  .foot .tag { font-size:11px; color:rgba(255,255,255,0.4); letter-spacing:1px; }
+
+  /* sticky bottom bar */
+  .sticky-cta { position:fixed; bottom:0; left:0; right:0; z-index:50; background:rgba(2,26,14,0.95); backdrop-filter:blur(10px); border-top:1px solid rgba(148,218,0,0.2); padding:12px 16px; transform:translateY(120%); transition:transform 0.3s ease; }
+  .sticky-cta.show { transform:translateY(0); }
+  .sticky-cta .inner { max-width:480px; margin:0 auto; }
+  .sticky-cta a { display:flex; align-items:center; justify-content:center; gap:8px; background:#94DA00; color:#03331C; font-size:14px; font-weight:700; border-radius:11px; padding:14px; text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============ SECTION 1 — HERO ============ -->
+  <section id="hero" class="sec">
+    <span class="eyebrow solid">TOP Franchise · FOCO Model</span>
+    <div class="h-headline">Own a <span class="lime">TOP</span> cloud kitchen.<br>Fully managed by us.</div>
+    <div class="h-sub">Built for India's fastest growing food category.</div>
+    <div class="h-explainer">You invest. We build the brand, run the kitchen, and share the returns. Zero operations on your side.</div>
+
+    <div class="h-cards">
+      <div class="h-card ic-green">
+        <div class="icw"><i class="ti ti-wallet"></i></div>
+        <div class="pre">From</div>
+        <div class="num"><small>₹</small>12L</div>
+        <div class="lbl">Investment to start</div>
+      </div>
+      <div class="h-card ic-blue">
+        <div class="icw"><i class="ti ti-trending-up"></i></div>
+        <div class="pre">Up to</div>
+        <div class="num">56%</div>
+        <div class="lbl">ROI at maturity</div>
+      </div>
+      <div class="h-card ic-amber">
+        <div class="icw"><i class="ti ti-cash"></i></div>
+        <div class="pre">Up to</div>
+        <div class="num"><small>₹</small>60K<small>/mo</small></div>
+        <div class="lbl">Earnings at maturity · ₹15K/mo assured base</div>
+      </div>
+      <div class="h-card ic-pink">
+        <div class="icw"><i class="ti ti-armchair"></i></div>
+        <div class="pre">Fully</div>
+        <div class="num">100%</div>
+        <div class="lbl">Managed by TOP. Passive income for you.</div>
+      </div>
+    </div>
+
+    <div class="h-protect">
+      <div class="pw"><i class="ti ti-shield-check"></i></div>
+      <span class="pt"><b>Capital protected.</b> If you haven't recovered your ₹12L by end of the 3-year lock-in, we buy the unit back.</span>
+    </div>
+
+    <a class="cta-primary" href="#apply">Know More <i class="ti ti-arrow-right"></i></a>
+    <div class="trust-line"><i class="ti ti-clock" style="font-size:13px;"></i> 2 min form</div>
+  </section>
+
+  <!-- ============ SECTION 2 — WHY ============ -->
+  <section id="why" class="sec">
+    <span class="eyebrow outline">Why TOP</span>
+    <h2 class="head">Why franchise with <span class="lime">TOP</span></h2>
+    <div class="intro">Four reasons this is different from any other food franchise you have looked at.</div>
+
+    <div class="why-list">
+      <div class="why-card ic-green">
+        <div class="icw"><i class="ti ti-chart-arrows-vertical"></i></div>
+        <div class="body">
+          <div class="ttl">Proven &amp; profitable</div>
+          <div class="desc"><b>3 of 3 cloud kitchens already EBITDA positive.</b> You invest in a working model, not an untested idea.</div>
+        </div>
+      </div>
+      <div class="why-card ic-blue">
+        <div class="icw"><i class="ti ti-armchair"></i></div>
+        <div class="body">
+          <div class="ttl">Truly passive</div>
+          <div class="desc">TOP hires, runs and manages everything. <b>You own the asset, we run the business.</b> Zero operations on your side.</div>
+        </div>
+      </div>
+      <div class="why-card ic-amber">
+        <div class="icw"><i class="ti ti-star"></i></div>
+        <div class="body">
+          <div class="ttl">Consistency you can count on</div>
+          <div class="desc">A scalable model built on proven industry best practices. <b>60,000+ orders delivered, rated 4.2+</b> across Swiggy &amp; Zomato.</div>
+        </div>
+      </div>
+      <div class="why-card ic-pink">
+        <div class="icw"><i class="ti ti-trending-up"></i></div>
+        <div class="body">
+          <div class="ttl">The right category, right now</div>
+          <div class="desc">India's health-first food wave is the fastest growing in QSR. <b>TOP is the daily-meal play in that wave.</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3 — FORM ============ -->
+  <section id="apply" class="sec">
+    <div id="formView">
+      <span class="eyebrow solid">Get Started</span>
+      <h2 class="head">Check your <span class="lime">eligibility</span></h2>
+      <div class="intro" style="margin-bottom:24px;">Fill this quick form and our franchise team will reach out within 24 hours.</div>
+
+      <div class="f-field">
+        <label class="f-label">Full Name <span class="req">*</span></label>
+        <input class="f-input" id="f_name" type="text" placeholder="Your name">
+        <div class="f-err" id="e_name">Please enter your name</div>
+      </div>
+
+      <div class="f-field">
+        <label class="f-label">WhatsApp Number <span class="req">*</span></label>
+        <div class="f-phone">
+          <div class="f-cc">🇮🇳 +91</div>
+          <input class="f-input" id="f_phone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit number">
+        </div>
+        <div class="f-err" id="e_phone">Enter a valid 10-digit number</div>
+      </div>
+
+      <div class="f-field">
+        <label class="f-label">Email <span class="req">*</span></label>
+        <input class="f-input" id="f_email" type="email" placeholder="you@email.com">
+        <div class="f-err" id="e_email">Enter a valid email</div>
+      </div>
+
+      <div class="f-field">
+        <label class="f-label">What do you do? <span class="req">*</span></label>
+        <select class="f-select placeholder" id="f_profession" onchange="this.classList.remove('placeholder')">
+          <option value="" disabled selected>Select profession</option>
+          <option>Salaried professional</option>
+          <option>Business owner / Entrepreneur</option>
+          <option>Doctor / Lawyer / Consultant</option>
+          <option>Investor / Trader</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="f-field">
+        <label class="f-label">Why do you want to invest? <span class="req">*</span></label>
+        <select class="f-select placeholder" id="f_why" onchange="this.classList.remove('placeholder')">
+          <option value="" disabled selected>Select reason</option>
+          <option>Passive income</option>
+          <option>Expand my business portfolio</option>
+          <option>Healthier food industry opportunity</option>
+        </select>
+      </div>
+
+      <div class="f-field">
+        <label class="f-label">How soon do you want to invest? <span class="req">*</span></label>
+        <select class="f-select placeholder" id="f_when" onchange="this.classList.remove('placeholder')">
+          <option value="" disabled selected>Select timeline</option>
+          <option>Immediately (within 1 month)</option>
+          <option>1 to 3 months</option>
+          <option>3 to 6 months</option>
+          <option>Just researching</option>
+        </select>
+      </div>
+
+      <button class="cta-primary" id="submitBtn" onclick="submitForm()">Submit Application <i class="ti ti-arrow-right"></i></button>
+      <div class="trust-line"><i class="ti ti-lock" style="font-size:13px;"></i> Your details are safe with us</div>
+    </div>
+
+    <!-- SUCCESS VIEW -->
+    <div class="f-success" id="successView">
+      <div class="sic"><i class="ti ti-check"></i></div>
+      <h3>Application Received</h3>
+      <div class="msg">Thank you. Our franchise team will reach out on WhatsApp <b>within 24 hours</b> to understand your profile and take it forward.</div>
+
+      <div class="f-divider">
+        <span class="ln"></span><span class="tx">While you wait</span><span class="ln"></span>
+      </div>
+
+      <div class="f-broch">
+        <div class="bt"><i class="ti ti-file-text"></i> Read the full brochure</div>
+        <div class="bd">Get the complete picture before your call. <b>The TOP story, investment breakdown, return scenarios compared with an index fund, and our real traction to date.</b></div>
+        <!-- TODO: replace # with your hosted brochure link -->
+        <a class="cta-primary" id="brochureBtn" href="BROCHURE_LINK_HERE" target="_blank" rel="noopener">Open Brochure <i class="ti ti-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4 — PROOF ============ -->
+  <section id="proof" class="sec">
+    <span class="eyebrow solid">The Proof</span>
+    <h2 class="head">Loved. And ordered<br><span class="lime">again and again.</span></h2>
+    <div class="intro">High ratings get the first order. A high repeat rate builds the business. TOP has both.</div>
+
+    <div class="p-stats">
+      <div class="p-stat"><div class="n">4.2<i class="ti ti-star-filled"></i></div><div class="l">Avg across Swiggy &amp; Zomato</div></div>
+      <div class="p-stat"><div class="n">5,200+</div><div class="l">Ratings received</div></div>
+      <div class="p-stat"><div class="n">60K+</div><div class="l">Orders delivered</div></div>
+      <div class="p-stat"><div class="n">33.5%</div><div class="l">Repeat rate at HSR, our oldest kitchen</div></div>
+    </div>
+
+    <div class="p-cohort">
+      <div class="ri"><i class="ti ti-calendar-repeat"></i></div>
+      <div class="rt">At HSR, our most mature kitchen, <b>1 in 3 customers keep coming back.</b> This is what your kitchen grows into over time.</div>
+    </div>
+
+    <div class="sectlbl">What customers say</div>
+    <div class="p-reviews">
+      <div class="p-card">
+        <div class="top"><div class="av">M</div><div><div class="nm">Meenal Gangrade</div><div class="or">Indiranagar</div></div><div class="stars">★★★★★</div></div>
+        <div class="qt">"It was so delicious, I couldn't believe it was actually healthy! First review I've left in 6 years of using the app."</div>
+      </div>
+      <div class="p-card">
+        <div class="top"><div class="av">V</div><div><div class="nm">Vikas</div><div class="or">47 orders · HSR</div></div><div class="stars">★★★★★</div></div>
+        <div class="qt">"As always, it's TOP."</div>
+      </div>
+      <div class="p-card">
+        <div class="top"><div class="av">R</div><div><div class="nm">Rajvansh Verma</div><div class="or">BTM</div></div><div class="stars">★★★★★</div></div>
+        <div class="qt">"Genuinely tasty and healthy at the same time. Underrated kitchen for sure."</div>
+      </div>
+      <div class="p-card">
+        <div class="top"><div class="av">A</div><div><div class="nm">Abhimanyu Timbadia</div><div class="or">Indiranagar</div></div><div class="stars">★★★★★</div></div>
+        <div class="qt">"Best high protein sandwich on the market."</div>
+      </div>
+      <div class="p-card">
+        <div class="top"><div class="av">S</div><div><div class="nm">Sanyam Cheraya</div><div class="or">Marathahalli</div></div><div class="stars">★★★★★</div></div>
+        <div class="qt">"You guys never disappoint, doesn't matter what I order."</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5 — NEXT ============ -->
+  <section id="next" class="sec">
+    <span class="eyebrow outline">The Process</span>
+    <h2 class="head">What happens <span class="lime">next</span></h2>
+    <div class="intro">From application to launch in as little as 15 days. Here is exactly how it works.</div>
+
+    <div class="n-steps">
+      <div class="n-step">
+        <div class="line"></div><div class="circle">1</div>
+        <div class="body"><div class="ttl">You apply <span class="tag">2 MIN</span></div>
+        <div class="desc">Fill the quick form above. That is all it takes to get started.</div></div>
+      </div>
+      <div class="n-step">
+        <div class="line"></div><div class="circle">2</div>
+        <div class="body"><div class="ttl">Profile call <span class="tag">15 MIN</span></div>
+        <div class="desc">Our franchise team calls you to understand your profile and answer every question you have.</div></div>
+      </div>
+      <div class="n-step">
+        <div class="line"></div><div class="circle">3</div>
+        <div class="body"><div class="ttl">Deep dive &amp; site allocation</div>
+        <div class="desc">If your profile is a fit, we move to a detailed commercial discussion and allocate your territory.</div></div>
+      </div>
+      <div class="n-step">
+        <div class="circle">4</div>
+        <div class="body"><div class="ttl">Launch <span class="tag">15–30 DAYS</span></div>
+        <div class="desc">We set up and launch your TOP cloud kitchen. You start earning. We run everything.</div></div>
+      </div>
+    </div>
+
+    <a class="cta-primary" href="#apply">Apply Now <i class="ti ti-arrow-right"></i></a>
+    <div class="trust-line">2 minutes is all it takes to start.</div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="foot">
+    <div class="logo">TOP</div>
+    <div class="tag">TASTE OF PROTEIN · BENGALURU</div>
+  </div>
+
+</div>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="inner">
+    <a href="#apply"><i class="ti ti-edit"></i> Apply for a TOP Franchise</a>
+  </div>
+</div>
+
+<script>
+  /* ============================================================
+     GOOGLE SHEET CONNECTION
+     Replace the URL below with your Google Apps Script Web App URL.
+     (See deployment steps. It looks like:
+      https://script.google.com/macros/s/AKfy....../exec )
+     ============================================================ */
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxMDPAdYYBwvZdTXrPqTxej9upkpmZWOmseMgTapjmqr88fYB7aLLBo-pcKL9fLPDQFgQ/exec';
+
+  function submitForm() {
+    var name = document.getElementById('f_name').value.trim();
+    var phone = document.getElementById('f_phone').value.trim();
+    var email = document.getElementById('f_email').value.trim();
+    var profession = document.getElementById('f_profession').value;
+    var why = document.getElementById('f_why').value;
+    var when = document.getElementById('f_when').value;
+
+    ['e_name','e_phone','e_email'].forEach(function(id){ document.getElementById(id).style.display='none'; });
+
+    var ok = true;
+    if (!name) { document.getElementById('e_name').style.display='block'; ok=false; }
+    if (!/^[6-9]\d{9}$/.test(phone)) { document.getElementById('e_phone').style.display='block'; ok=false; }
+    if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) { document.getElementById('e_email').style.display='block'; ok=false; }
+    if (!profession || !why || !when) { ok=false; }
+    if (!ok) return;
+
+    var btn = document.getElementById('submitBtn');
+    btn.disabled = true; btn.style.opacity = '0.5'; btn.innerHTML = 'Submitting...';
+
+    var data = { name:name, phone:phone, email:email, profession:profession, why:why, when:when };
+
+    fetch(SCRIPT_URL, {
+      method:'POST',
+      mode:'no-cors',
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body: JSON.stringify(data)
+    }).then(showSuccess).catch(showSuccess);
+  }
+
+  function showSuccess() {
+    document.getElementById('formView').style.display = 'none';
+    document.getElementById('successView').style.display = 'block';
+    document.getElementById('apply').scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+
+  /* sticky CTA appears after scrolling past hero, hides on the form */
+  var sticky = document.getElementById('stickyCta');
+  var applySec = document.getElementById('apply');
+  window.addEventListener('scroll', function() {
+    var y = window.scrollY;
+    var applyTop = applySec.offsetTop - 200;
+    var applyBottom = applySec.offsetTop + applySec.offsetHeight;
+    if (y > 500 && (y < applyTop || y > applyBottom)) {
+      sticky.classList.add('show');
+    } else {
+      sticky.classList.remove('show');
+    }
+  });
+</script>
+</body>
+</html>
