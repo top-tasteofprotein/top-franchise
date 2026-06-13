@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TOP Franchise · Brochure</title>
+<meta name="description" content="Own a TOP cloud kitchen. Fully managed. From ₹12L.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Plus Jakarta Sans',sans-serif; background:#010d07; color:#fff; line-height:1.5; }
+  .wrap { max-width:480px; margin:0 auto; overflow:hidden; }
+  .lime { color:#94DA00; }
+  .sec { padding:46px 22px; position:relative; }
+  .bg-a { background:#03331C; }
+  .bg-b { background:#021a0e; }
+  .sec.cap { border-radius:28px 28px 0 0; margin-top:-22px; }
+  .snum { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .snum .digit { font-family:'Bebas Neue',sans-serif; font-size:15px; color:#94DA00; letter-spacing:1px; }
+  .snum .accent { height:2px; width:26px; background:#94DA00; border-radius:2px; }
+  .snum .word { font-size:10px; letter-spacing:2.5px; text-transform:uppercase; color:rgba(255,255,255,0.45); font-weight:700; }
+  h2.head { font-family:'Bebas Neue',sans-serif; font-size:34px; line-height:1.0; letter-spacing:1px; color:#fff; margin-bottom:12px; }
+  h2.head .lime { color:#94DA00; }
+  .lead { font-size:13px; line-height:1.65; color:rgba(255,255,255,0.62); }
+  .lead b { color:#fff; font-weight:600; }
+  .lead b.lime { color:#94DA00; }
+  .fn-mark { color:#94DA00; font-size:0.7em; vertical-align:super; font-weight:700; }
+  .fn { font-size:9.5px; line-height:1.5; color:rgba(255,255,255,0.32); margin-top:16px; font-style:italic; }
+  .cta-primary { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; background:#94DA00; color:#03331C; font-size:15px; font-weight:700; border:none; border-radius:13px; padding:17px; cursor:pointer; letter-spacing:0.3px; text-decoration:none; transition:transform 0.1s; }
+  .cta-primary:active { transform:scale(0.98); }
+  .cta-primary svg { width:18px; height:18px; stroke:#03331C; fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+
+  /* icon system — inline SVG, color from parent */
+  .icw { border-radius:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .ic { stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .g .icw{background:rgba(148,218,0,.15); color:#94DA00}
+  .b .icw{background:rgba(55,138,221,.15); color:#5BA8F5}
+  .a .icw{background:rgba(253,212,0,.15); color:#FDD400}
+  .p .icw{background:rgba(212,83,126,.18); color:#F082A8}
+
+  #cover { background:#03331C; padding:50px 22px 48px; }
+  .cv-badge { display:inline-block; font-size:10px; letter-spacing:2.5px; font-weight:700; text-transform:uppercase; color:#03331C; background:#94DA00; padding:5px 11px; border-radius:3px; margin-bottom:18px; }
+  .cv-head { font-family:'Bebas Neue',sans-serif; font-size:42px; line-height:0.96; letter-spacing:1px; margin-bottom:13px; }
+  .cv-sub { font-size:13px; line-height:1.6; color:rgba(255,255,255,0.6); margin-bottom:26px; }
+  .cv-cards { display:grid; grid-template-columns:1fr 1fr; gap:11px; }
+  .cv-card { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:16px 14px; }
+  .cv-card .icw { width:40px;height:40px;margin-bottom:11px; }
+  .cv-card .icw .ic { width:22px; height:22px; }
+  .cv-card .pre{font-size:10.5px;font-weight:600;color:rgba(255,255,255,.45);height:14px}
+  .cv-card .num{font-family:'Bebas Neue',sans-serif;font-size:32px;line-height:1;margin-top:2px}
+  .cv-card .num small{font-size:15px}
+  .cv-card .lbl{font-size:10px;line-height:1.35;color:rgba(255,255,255,.55);margin-top:6px;font-weight:500}
+
+  .quote { background:rgba(148,218,0,0.08); border-left:3px solid #94DA00; border-radius:0 12px 12px 0; padding:15px 16px; margin:22px 0; font-size:13.5px; font-style:italic; color:rgba(255,255,255,0.88); line-height:1.55; }
+  .quote span { display:block; font-style:normal; font-size:11px; color:#94DA00; margin-top:8px; font-weight:600; }
+  .timeline { display:flex; align-items:stretch; gap:5px; margin:22px 0; }
+  .tl-node { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:10px 4px; font-size:9.5px; font-weight:600; color:rgba(255,255,255,0.7); flex:1; text-align:center; display:flex; flex-direction:column; justify-content:center; }
+  .tl-node b { display:block; color:#94DA00; font-size:10.5px; margin-top:3px; line-height:1.2; }
+  .tl-arrow { color:rgba(148,218,0,0.5); font-size:12px; align-self:center; }
+  .founders { display:flex; flex-direction:column; gap:10px; }
+  .founder-row { display:flex; gap:12px; align-items:center; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:13px; padding:13px 14px; }
+  .founder-row .f-av { width:42px; height:42px; border-radius:50%; background:linear-gradient(135deg,#94DA00,#5BA8F5); display:flex; align-items:center; justify-content:center; font-family:'Bebas Neue',sans-serif; font-size:17px; color:#03331C; flex-shrink:0; letter-spacing:0.5px; }
+  .founder-row .f-tx { font-size:13px; color:#fff; line-height:1.4; }
+  .founder-row .f-tx b { font-weight:700; }
+  .founder-row .f-tx .role { color:#94DA00; font-size:11px; font-weight:600; }
+  .founder-row .f-tx span { color:rgba(255,255,255,0.5); font-size:11px; display:block; }
+
+  .pf-stats { display:grid; grid-template-columns:1fr 1fr 1fr; gap:9px; margin-bottom:16px; }
+  .pf-stat { background:rgba(148,218,0,0.06); border:1px solid rgba(148,218,0,0.2); border-radius:13px; padding:15px 8px; text-align:center; }
+  .pf-stat .n { font-family:'Bebas Neue',sans-serif; font-size:26px; color:#94DA00; line-height:1; }
+  .pf-stat .l { font-size:9px; line-height:1.3; color:rgba(255,255,255,0.6); margin-top:6px; font-weight:500; }
+  .ptime { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:17px 15px; }
+  .ptime .h { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.4); font-weight:700; margin-bottom:14px; }
+  .pt-row { display:flex; align-items:center; gap:11px; margin-bottom:11px; }
+  .pt-row:last-child { margin-bottom:0; }
+  .pt-k { font-size:12px; font-weight:600; color:#fff; width:118px; flex-shrink:0; }
+  .pt-k small { color:rgba(255,255,255,0.4); }
+  .pt-bar { flex:1; height:26px; background:rgba(255,255,255,0.05); border-radius:7px; overflow:hidden; }
+  .pt-fill { height:100%; background:linear-gradient(90deg, rgba(148,218,0,0.4), #94DA00); border-radius:7px; display:flex; align-items:center; justify-content:flex-end; padding-right:10px; font-family:'Bebas Neue',sans-serif; font-size:13px; color:#03331C; font-weight:700; }
+
+  .steps3 { display:flex; flex-direction:column; gap:11px; }
+  .s3 { display:flex; gap:13px; align-items:center; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:15px; }
+  .s3 .icw { width:44px; height:44px; }
+  .s3 .icw .ic { width:23px; height:23px; }
+  .s3 .tx { font-size:13px; line-height:1.45; color:rgba(255,255,255,0.82); }
+  .s3 .tx b { color:#fff; display:block; margin-bottom:2px; }
+
+  .inv-bar { display:flex; height:48px; border-radius:11px; overflow:hidden; margin:6px 0; border:1px solid rgba(255,255,255,0.15); gap:3px; background:rgba(255,255,255,0.1); padding:0; }
+  .inv-assets { background:#94DA00; flex:8.75; border-radius:8px 0 0 8px; }
+  .inv-setup { background:rgba(255,255,255,0.18); flex:1; }
+  .inv-fee { background:rgba(253,212,0,0.55); flex:2.25; border-radius:0 8px 8px 0; }
+  .inv-legend { display:flex; flex-direction:column; gap:11px; margin-top:18px; }
+  .lg { display:flex; gap:11px; align-items:flex-start; }
+  .lg .dot { width:13px; height:13px; border-radius:3px; flex-shrink:0; margin-top:3px; }
+  .lg .t { font-size:12px; line-height:1.5; color:rgba(255,255,255,0.7); }
+  .lg .t b { color:#fff; font-weight:700; }
+  .lg .amt { margin-left:auto; font-family:'Bebas Neue',sans-serif; font-size:18px; color:#fff; flex-shrink:0; padding-left:8px; }
+  .inv-wc { display:flex; gap:11px; align-items:center; background:rgba(148,218,0,0.1); border:1px solid rgba(148,218,0,0.25); border-radius:12px; padding:13px 14px; margin-top:18px; }
+  .inv-wc .icw { width:38px; height:38px; }
+  .inv-wc .ic { width:19px; height:19px; }
+  .inv-wc .t { font-size:11.5px; line-height:1.5; color:rgba(255,255,255,0.85); }
+  .inv-wc .t b { color:#94DA00; }
+
+  .slab-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:9px; margin:6px 0 12px; }
+  .slab-card { background:rgba(148,218,0,0.06); border:1px solid rgba(148,218,0,0.2); border-radius:11px; padding:13px 6px; text-align:center; }
+  .slab-card .slab-band { font-size:10.5px; font-weight:600; color:rgba(255,255,255,0.6); margin-bottom:7px; }
+  .slab-card .slab-rate { font-family:'Bebas Neue',sans-serif; font-size:32px; line-height:1; color:#94DA00; }
+  .slab-note { font-size:10.5px; line-height:1.55; color:rgba(255,255,255,0.5); margin-bottom:22px; }
+  .ret-table { border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,0.1); margin-bottom:16px; }
+  .ret-row { display:grid; grid-template-columns:1.45fr 1fr 1fr; align-items:center; }
+  .ret-row.h div { font-size:9.5px; letter-spacing:0.5px; text-transform:uppercase; color:rgba(255,255,255,0.5); font-weight:700; padding:11px 10px; background:rgba(255,255,255,0.06); }
+  .ret-row .c { padding:14px 10px; border-top:1px solid rgba(255,255,255,0.07); }
+  .ret-row .scen { display:flex; flex-direction:column; gap:3px; }
+  .ret-row .scen .sname { font-family:'Bebas Neue',sans-serif; font-size:21px; letter-spacing:0.5px; color:#fff; line-height:0.9; }
+  .ret-row .scen small { color:rgba(255,255,255,0.45); font-size:9.5px; }
+  .ret-row .scen .proof { color:#94DA00; font-size:9.5px; font-weight:600; line-height:1.3; }
+  .ret-row .val { font-family:'Bebas Neue',sans-serif; font-size:22px; color:#94DA00; }
+  .ret-row.best { background:rgba(148,218,0,0.07); }
+  .ret-floor { display:flex; gap:11px; align-items:center; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:13px 14px; margin-bottom:22px; }
+  .ret-floor .icw { width:38px; height:38px; }
+  .ret-floor .ic { width:19px; height:19px; }
+  .ret-floor .t { font-size:11.5px; line-height:1.5; color:rgba(255,255,255,0.8); }
+  .ret-floor .t b { color:#94DA00; }
+  .cmp-lbl { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.4); font-weight:700; margin-bottom:8px; }
+  .xirr-note { font-size:10.5px; line-height:1.55; color:rgba(255,255,255,0.5); margin-bottom:16px; }
+  .bars { display:flex; flex-direction:column; gap:11px; }
+  .bar-row .bl { display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:5px; }
+  .bar-row .bl .nm { color:rgba(255,255,255,0.7); font-weight:600; }
+  .bar-row .bl .pc { font-family:'Bebas Neue',sans-serif; font-size:16px; }
+  .bar-track { height:14px; background:rgba(255,255,255,0.06); border-radius:7px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:7px; }
+  .bar-fd .bar-fill{background:rgba(255,255,255,0.25)} .bar-fd .pc{color:rgba(255,255,255,0.5)}
+  .bar-idx .bar-fill{background:rgba(255,255,255,0.35)} .bar-idx .pc{color:rgba(255,255,255,0.6)}
+  .bar-cons .bar-fill{background:rgba(148,218,0,0.5)} .bar-cons .pc{color:#94DA00}
+  .bar-base .bar-fill{background:rgba(148,218,0,0.75)} .bar-base .pc{color:#94DA00}
+  .bar-best .bar-fill{background:#94DA00} .bar-best .pc{color:#94DA00}
+  .ret-tax { display:flex; gap:11px; align-items:flex-start; background:rgba(55,138,221,0.1); border:1px solid rgba(55,138,221,0.25); border-radius:12px; padding:13px 14px; margin-top:20px; }
+  .ret-tax .icw { width:38px; height:38px; }
+  .ret-tax .ic { width:19px; height:19px; }
+  .ret-tax .t { font-size:11px; line-height:1.55; color:rgba(255,255,255,0.8); }
+  .ret-tax .t b { color:#fff; }
+
+  .prot-grid { display:grid; grid-template-columns:1fr 1fr; gap:11px; }
+  .prot-card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:16px 14px; }
+  .prot-card .icw { width:40px;height:40px;margin-bottom:11px; }
+  .prot-card .icw .ic { width:21px; height:21px; }
+  .prot-card .t { font-size:13px; font-weight:700; color:#fff; margin-bottom:5px; }
+  .prot-card .d { font-size:11px; line-height:1.45; color:rgba(255,255,255,0.6); }
+  .whofor { margin-top:14px; display:grid; grid-template-columns:1fr 1fr; gap:11px; }
+  .whofor .col { border-radius:12px; padding:15px 14px; }
+  .whofor .yes { background:rgba(148,218,0,0.08); border:1px solid rgba(148,218,0,0.22); }
+  .whofor .no { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); }
+  .whofor h4 { font-size:11px; font-weight:700; margin-bottom:9px; display:flex; align-items:center; gap:6px; }
+  .whofor h4 .ic { width:14px; height:14px; }
+  .whofor .yes h4 { color:#94DA00; } .whofor .no h4 { color:rgba(255,255,255,0.5); }
+  .whofor p { font-size:10.5px; line-height:1.5; color:rgba(255,255,255,0.6); margin-bottom:6px; }
+
+  .tcards { display:flex; flex-direction:column; gap:10px; }
+  .tcard { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:13px; padding:14px; }
+  .tcard .top { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+  .tcard .av { width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#94DA00,#5BA8F5);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#03331C;flex-shrink:0 }
+  .tcard .nm { font-size:12.5px; font-weight:700; color:#fff; }
+  .tcard .or { font-size:10px; color:rgba(255,255,255,0.45); }
+  .tcard .st { margin-left:auto; color:#FDD400; font-size:11px; }
+  .tcard .qt { font-size:12.5px; font-style:italic; color:rgba(255,255,255,0.75); line-height:1.5; }
+
+  .jsteps { position:relative; }
+  .jstep { display:flex; gap:15px; position:relative; padding-bottom:22px; }
+  .jstep:last-child { padding-bottom:0; }
+  .jstep .line { position:absolute; left:19px; top:42px; bottom:-2px; width:2px; background:linear-gradient(to bottom, rgba(148,218,0,0.4), rgba(148,218,0,0.1)); }
+  .jstep:last-child .line { display:none; }
+  .jstep .circle { width:40px;height:40px;border-radius:50%;background:rgba(148,218,0,0.15);border:1px solid rgba(148,218,0,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Bebas Neue',sans-serif;font-size:20px;color:#94DA00;z-index:1 }
+  .jstep .body { flex:1; padding-top:3px; }
+  .jstep .ttl { font-size:14px; font-weight:700; color:#fff; margin-bottom:4px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .jstep .tag { font-size:9.5px; font-weight:700; color:#94DA00; background:rgba(148,218,0,0.12); padding:3px 8px; border-radius:20px; }
+  .jstep .desc { font-size:11.5px; line-height:1.5; color:rgba(255,255,255,0.6); }
+
+  #close { background:linear-gradient(160deg,#03331C,#010d07); padding:50px 22px; text-align:center; border-radius:28px 28px 0 0; margin-top:-22px; position:relative; }
+  .cl-head { font-family:'Bebas Neue',sans-serif; font-size:36px; line-height:1.0; letter-spacing:1px; margin-bottom:13px; }
+  .cl-sub { font-size:13px; line-height:1.6; color:rgba(255,255,255,0.6); margin-bottom:22px; }
+  .recap { display:flex; flex-wrap:wrap; gap:7px; justify-content:center; margin-bottom:24px; }
+  .recap span { font-size:10.5px; font-weight:600; color:rgba(255,255,255,0.85); background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:20px; padding:7px 12px; }
+  .scarcity { display:flex; align-items:center; justify-content:center; gap:7px; font-size:11px; color:rgba(255,255,255,0.5); margin-top:15px; }
+  .scarcity .ic { width:14px; height:14px; color:#94DA00; }
+
+  #legal { background:#010d07; padding:30px 22px 40px; }
+  .legal-h { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.35); font-weight:700; margin-bottom:12px; display:flex; align-items:center; gap:7px; }
+  .legal-h .ic { width:14px; height:14px; color:rgba(255,255,255,0.3); }
+  .legal-body { font-size:10px; line-height:1.7; color:rgba(255,255,255,0.32); }
+  .legal-body p { margin-bottom:9px; }
+  .legal-body b { color:rgba(255,255,255,0.5); font-weight:600; }
+  .foot { text-align:center; padding:22px; background:#010d07; border-top:1px solid rgba(255,255,255,0.06); }
+  .foot .lg2 { font-family:'Bebas Neue',sans-serif; font-size:24px; letter-spacing:2px; color:#94DA00; }
+  .foot .tg { font-size:10px; color:rgba(255,255,255,0.4); letter-spacing:1px; margin-top:3px; }
+  .foot .ct { font-size:10.5px; color:rgba(255,255,255,0.5); margin-top:10px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== COVER ===== -->
+  <section id="cover">
+    <span class="cv-badge">TOP Franchise · FOCO Model</span>
+    <div class="cv-head">OWN A TOP<br>CLOUD KITCHEN.<br><span class="lime">WE RUN IT ALL.</span></div>
+    <div class="cv-sub">You put in the money. We build the brand, run the kitchen, and share what it earns. You do nothing day to day.</div>
+    <div class="cv-cards">
+      <div class="cv-card g"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M17 8V5a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h14a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V6"/><path d="M20 12v4h-4a2 2 0 0 1 0-4h4"/></svg></div><div class="pre">From</div><div class="num"><small>₹</small>12L</div><div class="lbl">To get started</div></div>
+      <div class="cv-card b"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div><div class="pre">Up to</div><div class="num">66.5%<span class="fn-mark">*</span></div><div class="lbl">A year, best case once steady</div></div>
+      <div class="cv-card a"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.2"/><path d="M6 12h.01M18 12h.01"/></svg></div><div class="pre">Up to</div><div class="num"><small>₹</small>66K<small>/mo</small><span class="fn-mark">*</span></div><div class="lbl">Best case · ₹15K/mo guaranteed minimum</div></div>
+      <div class="cv-card p"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><div class="pre">100%</div><div class="num">Protected<span class="fn-mark">^</span></div><div class="lbl">We buy it back if you don't recover your money</div></div>
+    </div>
+    <div class="fn"><span class="lime">*</span> Best-case example, once the kitchen is running steady. Actual returns differ by location and are not guaranteed. <span class="lime">^</span> Through buyback at the end of the lock-in. Full terms at the end of this document.</div>
+  </section>
+
+  <!-- ===== 01 STORY ===== -->
+  <section class="sec bg-b cap">
+    <div class="snum"><span class="digit">01</span><span class="accent"></span><span class="word">The Story</span></div>
+    <h2 class="head">The healthy food<br><span class="lime">that actually tastes good.</span></h2>
+    <div class="lead">TOP makes <b>food that's tasty first and healthy second.</b> The kind of meal you'd eat every day anyway. Not a diet. Not a gym supplement. Just good food with more protein in it.</div>
+    <div class="quote">"It was so delicious, I couldn't believe it was actually healthy."<span>Meenal · Indiranagar</span></div>
+    <div class="lead" style="margin-bottom:2px;"><b>4 outlets in 18 months</b>, all cooking from one central kitchen.</div>
+    <div class="timeline">
+      <div class="tl-node">Nov '24<b>HSR</b></div>
+      <span class="tl-arrow">→</span>
+      <div class="tl-node">Apr '25<b>Marathahalli</b></div>
+      <span class="tl-arrow">→</span>
+      <div class="tl-node">Feb '26<b>BTM</b></div>
+      <span class="tl-arrow">→</span>
+      <div class="tl-node">Apr '26<b>Indiranagar QSR</b></div>
+    </div>
+    <div class="founders">
+      <div class="founder-row"><div class="f-av">AB</div><div class="f-tx"><b>Abhishek Bishnoi</b> <span class="role">Chartered Accountant</span><span>Brand, growth &amp; customers</span></div></div>
+      <div class="founder-row"><div class="f-av">MM</div><div class="f-tx"><b>Mayank Mittal</b> <span class="role">Chartered Accountant</span><span>Finance &amp; business · ex-investment banker</span></div></div>
+      <div class="founder-row"><div class="f-av">NP</div><div class="f-tx"><b>Nikhil Poonia</b> <span class="role">MBA</span><span>Kitchen, recipes &amp; operations</span></div></div>
+    </div>
+  </section>
+
+  <!-- ===== 02 PROOF ===== -->
+  <section class="sec bg-a cap">
+    <div class="snum"><span class="digit">02</span><span class="accent"></span><span class="word">The Proof</span></div>
+    <h2 class="head">Already running.<br><span class="lime">Already making money.</span></h2>
+    <div class="pf-stats">
+      <div class="pf-stat"><div class="n">4</div><div class="l">Outlets open</div></div>
+      <div class="pf-stat"><div class="n">60K+</div><div class="l">Orders delivered</div></div>
+      <div class="pf-stat"><div class="n">4.2&#9733;</div><div class="l">Avg rating</div></div>
+      <div class="pf-stat"><div class="n">3.6x</div><div class="l">Sales up in 6 mo</div></div>
+      <div class="pf-stat"><div class="n">5,200+</div><div class="l">Ratings</div></div>
+      <div class="pf-stat"><div class="n">33.5%</div><div class="l">Reorder rate, HSR</div></div>
+    </div>
+    <div class="ptime">
+      <div class="h">How fast each kitchen turned profitable</div>
+      <div class="pt-row"><div class="pt-k">BTM <small>(newest)</small></div><div class="pt-bar"><div class="pt-fill" style="width:44%">MONTH 4</div></div></div>
+      <div class="pt-row"><div class="pt-k">HSR &amp; Marathahalli</div><div class="pt-bar"><div class="pt-fill" style="width:66%">MONTH 6</div></div></div>
+    </div>
+    <div class="lead" style="margin-top:14px;">Every kitchen we've opened has made money, and <b>the newest one got there fastest.</b></div>
+  </section>
+
+  <!-- ===== 03 MODEL ===== -->
+  <section class="sec bg-b cap">
+    <div class="snum"><span class="digit">03</span><span class="accent"></span><span class="word">How It Works</span></div>
+    <h2 class="head">You own it.<br><span class="lime">We run it.</span></h2>
+    <div class="lead" style="margin-bottom:22px;">It's called FOCO, which simply means: you own the kitchen, our team runs it for you. You earn from it without lifting a finger.</div>
+    <div class="steps3">
+      <div class="s3 g"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4"/><path d="M11 11l9 9M17 17l2-2M14 14l1.5-1.5"/></svg></div><div class="tx"><b>You pay &amp; own it</b>₹8.75L of the equipment is legally yours.</div></div>
+      <div class="s3 b"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M5 4h14a1 1 0 0 1 1 1v4a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V5a1 1 0 0 1 1-1z"/><path d="M12 12v8"/></svg></div><div class="tx"><b>We run everything</b>Same team, recipes and systems as our own kitchens.</div></div>
+      <div class="s3 a"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.2"/><path d="M6 12h.01M18 12h.01"/></svg></div><div class="tx"><b>You get paid monthly</b>A fixed minimum, plus a share of the sales.</div></div>
+    </div>
+  </section>
+
+  <!-- ===== 04 INVESTMENT ===== -->
+  <section class="sec bg-a cap">
+    <div class="snum"><span class="digit">04</span><span class="accent"></span><span class="word">Where The Money Goes</span></div>
+    <h2 class="head">₹12 Lakh.<br><span class="lime">Every rupee explained.</span></h2>
+    <div class="inv-bar"><div class="inv-assets"></div><div class="inv-setup"></div><div class="inv-fee"></div></div>
+    <div class="inv-legend">
+      <div class="lg"><span class="dot" style="background:#94DA00"></span><span class="t"><b>Equipment you own</b> — fridges, generator, billing machine, deposit. Real things you can sell if you ever need to.</span><span class="amt">₹8.75L</span></div>
+      <div class="lg"><span class="dot" style="background:rgba(255,255,255,0.25)"></span><span class="t"><b>Setup cost</b> — repairs, licences, broker fee. One-time, can't be resold.</span><span class="amt">₹1L</span></div>
+      <div class="lg"><span class="dot" style="background:rgba(253,212,0,0.55)"></span><span class="t"><b>Brand &amp; launch fee</b> — finding the spot, licence, setup, hiring, training, opening marketing.</span><span class="amt">₹2.25L</span></div>
+    </div>
+    <div class="inv-wc g"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.8 9a2 2 0 0 0-1.8-1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1M12 6v2m0 8v2"/></svg></div><span class="t"><b>Running cash? We cover it.</b> You don't put in a single rupee beyond the ₹12L.</span></div>
+  </section>
+
+  <!-- ===== 05 RETURNS ===== -->
+  <section class="sec bg-b cap">
+    <div class="snum"><span class="digit">05</span><span class="accent"></span><span class="word">What You Earn</span></div>
+    <h2 class="head">Three honest cases.<br><span class="lime">All beat the market.</span><span class="fn-mark">*</span></h2>
+    <div class="lead" style="margin-bottom:18px;">Your cut is a share of the kitchen's <b class="lime">monthly sales</b>, in slabs, just like income tax.</div>
+    <div class="slab-grid">
+      <div class="slab-card"><div class="slab-band">First ₹6L</div><div class="slab-rate">9%</div></div>
+      <div class="slab-card"><div class="slab-band">₹6L – ₹9L</div><div class="slab-rate">5%</div></div>
+      <div class="slab-card"><div class="slab-band">Above ₹9L</div><div class="slab-rate">3%</div></div>
+    </div>
+    <div class="slab-note">Each rate applies only to the sales inside that slab. The cases below show what you take home at three different monthly sales levels, once the kitchen is running steady.</div>
+    <div class="ret-table">
+      <div class="ret-row h"><div>Case</div><div>You get /mo</div><div>A year</div></div>
+      <div class="ret-row"><div class="c scen"><span class="sname">Conservative</span><small>₹4.5L sales/mo</small><span class="proof">&#10003; All 3 kitchens hit this by month 6</span></div><div class="c val">₹40.5K</div><div class="c val">40.5%</div></div>
+      <div class="ret-row"><div class="c scen"><span class="sname">Base</span><small>₹6.5L sales/mo</small><span class="proof">&#10003; A typical TOP kitchen</span></div><div class="c val">₹56.5K</div><div class="c val">56.5%</div></div>
+      <div class="ret-row best"><div class="c scen"><span class="sname">Best</span><small>₹8.5L sales/mo</small><span class="proof">&#10003; HSR, our oldest, beats this regularly</span></div><div class="c val">₹66.5K</div><div class="c val">66.5%</div></div>
+    </div>
+    <div class="ret-floor g"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v12m-4-4l4 4 4-4M4 21h16"/></svg></div><span class="t"><b>₹15,000 a month, guaranteed minimum.</b> You never get less than this. It kicks in from month 4, after a 3-month settling-in period.</span></div>
+    <div class="cmp-lbl">Real return (XIRR) vs other options</div>
+    <div class="xirr-note">XIRR is the true yearly return on your money over the full 3 years. It counts the slow start, every monthly payout, and the equipment you still own at the end. It's the fair way to compare against an FD or a mutual fund.</div>
+    <div class="bars">
+      <div class="bar-row bar-fd"><div class="bl"><span class="nm">Bank FD</span><span class="pc">~7%</span></div><div class="bar-track"><div class="bar-fill" style="width:13%"></div></div></div>
+      <div class="bar-row bar-idx"><div class="bl"><span class="nm">Stock market / index mutual fund</span><span class="pc">~12%</span></div><div class="bar-track"><div class="bar-fill" style="width:22%"></div></div></div>
+      <div class="bar-row bar-cons"><div class="bl"><span class="nm">TOP · Conservative</span><span class="pc">~21%</span></div><div class="bar-track"><div class="bar-fill" style="width:39%"></div></div></div>
+      <div class="bar-row bar-base"><div class="bl"><span class="nm">TOP · Base</span><span class="pc">~41%</span></div><div class="bar-track"><div class="bar-fill" style="width:76%"></div></div></div>
+      <div class="bar-row bar-best"><div class="bl"><span class="nm">TOP · Best</span><span class="pc">~54%</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div>
+    </div>
+    <div class="ret-tax b"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M5 21V5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v16l-3-2-2 2-2-2-2 2-2-2-3 2z"/><path d="M9 14l6-6M9.5 9h.01M14.5 13h.01"/></svg></div><span class="t"><b>You may also keep more of it.</b> Because this is a business, you can claim the equipment's wear-and-tear and other costs against the income, so the tax can be lower than on stock-market gains.<span class="fn-mark">†</span></span></div>
+    <div class="fn"><span class="lime">*</span> Example figures based on how our own kitchens did between Nov '25 and May '26. They vary and are not guaranteed. The monthly figures are the cash you take home once steady. XIRR is the true 3-year return on your money and includes a conservative equipment resale value at year 3, which you continue to own. FD and index numbers are long-term averages, also not guaranteed. <span class="lime">†</span> Tax depends on your own situation. Please check with your CA.</div>
+  </section>
+
+  <!-- ===== 06 PROTECTION ===== -->
+  <section class="sec bg-a cap">
+    <div class="snum"><span class="digit">06</span><span class="accent"></span><span class="word">If Things Go Slow</span></div>
+    <h2 class="head">We planned for<br><span class="lime">the bad months too.</span></h2>
+    <div class="prot-grid">
+      <div class="prot-card g"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M3 21V8l9-4 9 4v13"/><path d="M7 21v-6h10v6M7 13h10"/></svg></div><div class="t">You own real things</div><div class="d">₹8.75L of equipment and deposit are yours from day one. Something solid, not just a promise.</div></div>
+      <div class="prot-card b"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v12m-4-4l4 4 4-4M4 21h16"/></svg></div><div class="t">₹15K floor</div><div class="d">After the 3-month settling-in, your monthly payout never drops below ₹15,000.</div></div>
+      <div class="prot-card a"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6z"/><path d="M12 3v18"/></svg></div><div class="t">We take the early hit</div><div class="d">The first few months don't make money. We carry that cost, not you.</div></div>
+      <div class="prot-card p"><div class="icw"><svg class="ic" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2 5"/><path d="M20 5v6h-6"/></svg></div><div class="t">We buy it back<span class="fn-mark">^</span></div><div class="d">If you haven't earned back your ₹12L by the end of the 3-year lock-in, we buy the kitchen back from you.</div></div>
+    </div>
+    <div class="whofor">
+      <div class="col yes"><h4><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg> This suits you if</h4><p>You want a hands-off investment you can hold for 3+ years.</p><p>You like steady monthly income more than quick gains.</p></div>
+      <div class="col no"><h4><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg> Not for you if</h4><p>You need quick returns or money you can pull out any time.</p><p>You want to run the kitchen yourself.</p></div>
+    </div>
+    <div class="fn"><span class="lime">^</span> Buyback applies after the lock-in is complete and as per the terms in the signed franchise agreement.</div>
+  </section>
+
+  <!-- ===== 07 LOVE ===== -->
+  <section class="sec bg-b cap">
+    <div class="snum"><span class="digit">07</span><span class="accent"></span><span class="word">What People Say</span></div>
+    <h2 class="head">Real kitchen.<br><span class="lime">Real customers.</span></h2>
+    <div class="tcards">
+      <div class="tcard"><div class="top"><div class="av">V</div><div><div class="nm">Vikas</div><div class="or">47 orders · HSR</div></div><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div><div class="qt">"As always, it's TOP."</div></div>
+      <div class="tcard"><div class="top"><div class="av">R</div><div><div class="nm">Rajvansh Verma</div><div class="or">BTM</div></div><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div><div class="qt">"Genuinely tasty and healthy at the same time."</div></div>
+      <div class="tcard"><div class="top"><div class="av">S</div><div><div class="nm">Sanyam Cheraya</div><div class="or">Marathahalli</div></div><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div><div class="qt">"You guys never disappoint, doesn't matter what I order."</div></div>
+    </div>
+  </section>
+
+  <!-- ===== 08 JOURNEY ===== -->
+  <section class="sec bg-a cap">
+    <div class="snum"><span class="digit">08</span><span class="accent"></span><span class="word">How To Start</span></div>
+    <h2 class="head">From applying to opening<br><span class="lime">in as little as 15 days.</span></h2>
+    <div class="jsteps" style="margin-top:24px;">
+      <div class="jstep"><div class="line"></div><div class="circle">1</div><div class="body"><div class="ttl">You apply <span class="tag">2 MIN</span></div><div class="desc">Fill the short form.</div></div></div>
+      <div class="jstep"><div class="line"></div><div class="circle">2</div><div class="body"><div class="ttl">Quick call <span class="tag">15 MIN</span></div><div class="desc">We get to know you and answer all your questions.</div></div></div>
+      <div class="jstep"><div class="line"></div><div class="circle">3</div><div class="body"><div class="ttl">Details &amp; location</div><div class="desc">If it's a good fit, we talk numbers and pick your area.</div></div></div>
+      <div class="jstep"><div class="circle">4</div><div class="body"><div class="ttl">Open up <span class="tag">15–30 DAYS</span></div><div class="desc">We set it up and start the kitchen. You start earning. We run it all.</div></div></div>
+    </div>
+  </section>
+
+  <!-- ===== CLOSE ===== -->
+  <section id="close">
+    <div class="cl-head">A BUSINESS THAT<br>RUNS <span class="lime">WITHOUT YOU.</span></div>
+    <div class="cl-sub">Own a kitchen that's already proven to make money. We handle everything. You collect the returns.</div>
+    <div class="recap">
+      <span>₹12L to start</span><span>₹15K/mo minimum</span><span>up to ₹66K/mo</span><span>money protected</span><span>100% run by us</span>
+    </div>
+    <a class="cta-primary" href="https://top-tasteofprotein.github.io/top-franchise/">Apply for a TOP Franchise <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="scarcity"><svg class="ic" viewBox="0 0 24 24"><path d="M12 21s-6-5.5-6-10a6 6 0 1 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg> Only a few spots per area · We reply on WhatsApp within 24 hours</div>
+  </section>
+
+  <!-- ===== LEGAL ===== -->
+  <section id="legal">
+    <div class="legal-h"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> Important — please read</div>
+    <div class="legal-body">
+      <p>This document is for <b>information only</b>. It is not a legal document, an offer, or a contract, and it does not create any binding commitment on either side.</p>
+      <p>Reading or receiving this document <b>does not give you any right to a franchise</b>. Every application is reviewed, and the final decision to give or decline a franchise rests entirely with the company, which may accept or reject any application without giving a reason.</p>
+      <p>All numbers, returns and timelines shown are <b>examples and projections</b>, based on how existing outlets performed between Nov 2025 and May 2026. They are not guaranteed, will change with location and market conditions, and past results do not promise future results. Nothing here is investment, tax or financial advice.</p>
+      <p>The only firm assurance is the <b>return of your money through buyback</b>, after the lock-in period is complete and as per the specific terms in the signed franchise agreement.</p>
+      <p>All terms, returns, fees and protections are <b>decided only by the final signed franchise agreement</b>. If anything here differs from that agreement, the agreement is what counts. Terms &amp; Conditions apply.</p>
+      <p>© 2026 Rethink Future Pvt. Ltd. All rights reserved. TOP and Taste of Protein are brands of Rethink Future Pvt. Ltd.</p>
+    </div>
+  </section>
+
+  <div class="foot">
+    <div class="lg2">TOP</div>
+    <div class="tg">TASTE OF PROTEIN · BENGALURU</div>
+    <div class="ct">Rethink Future Pvt. Ltd. · feedback@rethinkfoods.in</div>
+  </div>
+
+</div>
+</body>
+</html>
